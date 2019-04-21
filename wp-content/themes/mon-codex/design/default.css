@@ -1,0 +1,60 @@
+/*
+Error: Invalid CSS after "flex": expected expression (e.g. 1px, bold), was ";"
+        on line 42 of /mnt/f20694f0-5c3b-4de3-95f0-387776ff884b/projets-en-developpement/projets-web/htdocs/codex-sandy/wp-content/themes/mon-codex/design/default.sass
+
+37:   display: flex
+38:   justify-content: center
+39:   padding-top: 15px
+40: 
+41: header nav ul
+42:   display: flex;
+43: 
+44: header nav ul li
+45:   width: 130px
+46:   list-style-type: none
+47: 
+
+Backtrace:
+/mnt/f20694f0-5c3b-4de3-95f0-387776ff884b/projets-en-developpement/projets-web/htdocs/codex-sandy/wp-content/themes/mon-codex/design/default.sass:42
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/lexer.rb:240:in `expected!'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:897:in `assert_done'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:69:in `parse'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:228:in `parse'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script.rb:27:in `parse'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:1169:in `parse_script'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:745:in `parse_property'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:707:in `parse_property_or_rule'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:666:in `parse_line'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:539:in `build_tree'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:558:in `block in append_children'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:557:in `each'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:557:in `append_children'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:548:in `block in build_tree'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:541:in `each'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:541:in `build_tree'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:558:in `block in append_children'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:557:in `each'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:557:in `append_children'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:417:in `_to_tree'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/sandy/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"flex\": expected expression (e.g. 1px, bold), was \";\"\A         on line 42 of /mnt/f20694f0-5c3b-4de3-95f0-387776ff884b/projets-en-developpement/projets-web/htdocs/codex-sandy/wp-content/themes/mon-codex/design/default.sass\A \A 37:   display: flex\A 38:   justify-content: center\A 39:   padding-top: 15px\A 40: \A 41: header nav ul\A 42:   display: flex;\A 43: \A 44: header nav ul li\A 45:   width: 130px\A 46:   list-style-type: none\A 47: "; }

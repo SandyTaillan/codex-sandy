@@ -1,0 +1,203 @@
+// couleur
+$blancGris : #e1e8e9
+$grisClair : #46565c
+$grisFonce : #3D4346
+$grisMteinte : #4c5b65
+$bleuVert : #3b6f84
+$gris : #59606E
+$ombre : #292A32
+$noirBord : #191e23
+$vert : #536562
+$vertSale : #383C3D
+$couleurCat : $bleuVert, $vert
+$imageTheme : "img/header-terre.png", "img/test3.png", "img/test4.png", "img/test5.png"
+$pointille : #bb4646, orange, #cfcf2a, #75bc3c, #3698e0, #7f3f7a
+// font h1 h2 texte, texte description catégorie
+$fontSize : 50px, 32px, 17px, 15px
+$fontserif : Cardo, Merriweather, PT serif
+// variable divers
+$i : 1
+
+// Les articles :  variations de couleurs selon la catégories
+@mixin couleurPost($couleurTitre, $couleurFondPost)
+  background-color: $couleurFondPost
+  padding: 50px
+  h2
+    display: block
+    margin-top: 50px
+    margin-left: 50px
+    padding-left: 10px
+    margin-bottom: 30px
+    border-left: 8px solid $couleurTitre
+
+*
+  margin: 0
+  padding: 0
+  color: $blancGris
+  font-family: Cardo, Merriweather, PT serif
+  font-size: nth($fontSize, 3)
+  line-height: 140%
+
+a
+  text-decoration: none
+
+body
+  background: $grisClair url(nth($imageTheme, 3))
+  margin: 0 auto
+  h2
+    font-size: nth($fontSize, 2)
+  p
+    margin-bottom: 20px
+.center
+  display: block
+  margin: 0 auto
+/*********************************/
+/*******     Images   ************/
+/*********************************/
+.shadow
+  border: 4px solid $grisMteinte
+  -moz-box-shadow:    0 3px 7px 4px $ombre
+  -webkit-box-shadow: 0 3px 7px 4px $ombre
+  box-shadow:         0 3px 7px 4px $ombre
+
+/*********************************/
+/*******     header   ************/
+/*********************************/
+header
+  background-image: url(nth($imageTheme, 4))
+
+.entete
+  display: flex
+  justify-content: space-around
+
+#entete-titre h1
+  margin: 15px 0 25px 0
+  font-size: nth($fontSize, 1)
+
+header nav
+  height: 65px
+  width: 100%
+  background-color: $bleuVert
+  background-image: url(img/test3.png)
+  display: flex
+  justify-content: center
+  ul
+    display: flex
+    margin: 0
+    li
+      padding: 20px 20px
+      margin-right: 70px
+      text-transform: uppercase
+      font-weight: bold
+      list-style-type: none
+      &:hover
+        background-color: #3d8297
+      &:active
+        background-color: #00a0d2
+
+/*********************************/
+/*******   Front-page ************/
+/*********************************/
+#front-page
+  width: 80%
+  margin: 80px auto
+  display: flex
+
+#front-image
+  margin-right: 70px
+
+#text-presentation
+  height : 220px
+  margin-top: 50px
+  padding: 25px
+  background-color: $grisMteinte
+
+/*********************************/
+/*******   index.php ************/
+/*********************************/
+#container
+  width: 65%
+  margin: 0 auto
+  display: flex
+
+#section-principale
+  width: 80%
+  min-width: 600px
+  background-color: $gris
+  border-left: 4px solid $bleuVert
+  border-right: 4px solid $bleuVert
+  padding: 30px
+  @include couleurPost($bleuVert, $gris)
+
+.data-articles
+  p, a
+    font-size: 12px
+    font-style: italic
+
+.separation
+  margin: 20px auto
+  height: 30px
+  width: 135px
+  display: flex
+  flex-flow: row wrap
+
+.separation span
+  display: block
+  width: 7px
+  height: 7px
+  margin-right: 15px
+
+@for $i from 1 through 6
+  .separation span:nth-child(#{$i})
+        background-color: nth($pointille, $i)
+
+/*********************************/
+/*******   category linux  *******/
+/*********************************/
+#section-principale
+  .description
+    margin-bottom: 50px
+    padding: 20px 40px
+    background-color: $grisClair
+    h2
+      text-align: center
+    p
+      font-size: nth($fontSize, 4)
+
+.articles-linux
+    @include couleurPost($bleuVert, $grisMteinte)
+.articles-devweb
+    @include couleurPost($grisFonce, $bleuVert)
+/*********************************/
+/***********   sidebar ***********/
+/*********************************/
+#sidebar
+  width: 15%
+  min-width: 150px
+  padding: 15px
+  background-color: $grisFonce
+  background-image: url(img/test5.png)
+
+#sidebar-pub
+  height: 100px
+  width: 130px
+  margin: 0 auto
+
+#sidebar h3
+  text-align: right
+  font-size: small
+
+#pub1A
+  width: 150px
+  height: 100px
+
+/*********************************/
+/***********   Footer ************/
+/*********************************/
+footer
+  height: 70px
+  padding: 50px
+  background-image: url(img/test3.png)
+  p
+    text-align: center
+

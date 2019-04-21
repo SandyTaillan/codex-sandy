@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #e1e8e9;
+  font-family: Cardo, Merriweather, PT serif;
+  font-size: 17px;
+  line-height: 140%; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #46565c url("img/test4.png");
+  margin: 0 auto; }
+  body h2 {
+    font-size: 32px; }
+  body p {
+    margin-bottom: 20px; }
+
+.center {
+  display: block;
+  margin: 0 auto; }
+
+/******************************** */
+/*******     Images   *********** */
+/******************************** */
+.shadow {
+  border: 4px solid #4c5b65;
+  -moz-box-shadow: 0 3px 7px 4px #292A32;
+  -webkit-box-shadow: 0 3px 7px 4px #292A32;
+  box-shadow: 0 3px 7px 4px #292A32; }
+
+/******************************** */
+/*******     header   *********** */
+/******************************** */
+header {
+  background-image: url("img/test5.png"); }
+
+.entete {
+  display: flex;
+  justify-content: space-around; }
+
+#entete-titre h1 {
+  margin: 15px 0 25px 0;
+  font-size: 50px; }
+
+header nav {
+  height: 65px;
+  width: 100%;
+  background-color: #3b6f84;
+  background-image: url(img/test3.png);
+  display: flex;
+  justify-content: center; }
+  header nav ul {
+    display: flex;
+    margin: 0; }
+    header nav ul li {
+      padding: 20px 20px;
+      margin-right: 70px;
+      text-transform: uppercase;
+      font-weight: bold;
+      list-style-type: none; }
+      header nav ul li:hover {
+        background-color: #3d8297; }
+      header nav ul li:active {
+        background-color: #00a0d2; }
+
+/******************************** */
+/*******   Front-page *********** */
+/******************************** */
+#front-page {
+  width: 80%;
+  margin: 80px auto;
+  display: flex; }
+
+#front-image {
+  margin-right: 70px; }
+
+#text-presentation {
+  height: 220px;
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #4c5b65; }
+
+/******************************** */
+/*******   index.php *********** */
+/******************************** */
+#container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex; }
+
+#section-principale {
+  width: 80%;
+  min-width: 600px;
+  background-color: #59606E;
+  border-left: 4px solid #3b6f84;
+  border-right: 4px solid #3b6f84;
+  padding: 30px;
+  background-color: #59606E;
+  padding: 50px; }
+  #section-principale h2 {
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-left: 8px solid #3b6f84; }
+
+.data-articles p, .data-articles a {
+  font-size: 12px;
+  font-style: italic; }
+
+.separation {
+  margin: 20px auto;
+  height: 30px;
+  width: 135px;
+  display: flex;
+  flex-flow: row wrap; }
+
+.separation span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 15px; }
+
+.separation span:nth-child(1) {
+  background-color: #bb4646; }
+
+.separation span:nth-child(2) {
+  background-color: orange; }
+
+.separation span:nth-child(3) {
+  background-color: #cfcf2a; }
+
+.separation span:nth-child(4) {
+  background-color: #75bc3c; }
+
+.separation span:nth-child(5) {
+  background-color: #3698e0; }
+
+.separation span:nth-child(6) {
+  background-color: #7f3f7a; }
+
+/******************************** */
+/*******   category linux  ****** */
+/******************************** */
+#section-principale .description {
+  margin-bottom: 50px;
+  padding: 20px 40px;
+  background-color: #46565c; }
+  #section-principale .description h2 {
+    text-align: center; }
+  #section-principale .description p {
+    font-size: 15px; }
+
+.articles-linux {
+  background-color: #4c5b65;
+  padding: 50px; }
+  .articles-linux h2 {
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-left: 8px solid #3b6f84; }
+
+.articles-devweb {
+  background-color: #3b6f84;
+  padding: 50px; }
+  .articles-devweb h2 {
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-left: 8px solid #3D4346; }
+
+/******************************** */
+/***********   sidebar ********** */
+/******************************** */
+#sidebar {
+  width: 15%;
+  min-width: 150px;
+  padding: 15px;
+  background-color: #3D4346;
+  background-image: url(img/test5.png); }
+
+#sidebar-pub {
+  height: 100px;
+  width: 130px;
+  margin: 0 auto; }
+
+#sidebar h3 {
+  text-align: right;
+  font-size: small; }
+
+#pub1A {
+  width: 150px;
+  height: 100px; }
+
+/******************************** */
+/***********   Footer *********** */
+/******************************** */
+footer {
+  height: 70px;
+  padding: 50px;
+  background-image: url(img/test3.png); }
+  footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
