@@ -172,25 +172,51 @@ header nav
 /***********   sidebar ***********/
 /*********************************/
 #sidebar
-  width: 15%
-  min-width: 150px
-  padding: 15px
+  width: 30%
+  min-width: 230px
+  padding: 25px
   background-color: $grisFonce
   background-image: url(img/test5.png)
-
 #sidebar-pub
   height: 100px
-  width: 130px
+  width: 200px
   margin: 0 auto
-
-#sidebar h3
-  text-align: right
-  font-size: small
-
+  h3
+    text-align: right
+    font-size: small
 #pub1A
   width: 150px
   height: 100px
+#categorie
+  background-color: $grisClair
+  padding: 20px
+  h3
+    margin-bottom: 20px
+li.categories
+  font-size: medium
+  list-style: none
+  padding-left: 20px
+  .cat-item
+    list-style-type: square
+    color: nth($pointille, 4)
+    margin-bottom: 20px
+    ul
+      li
+        list-style-type: square
+        color: nth($pointille, 2)
+        margin-left: 20px
 
+
+
+//li
+//  .current-cat
+//    color: red
+//li.categories
+//    .current-cat-parent
+//      color: yellow
+//li
+//  .children
+//    color: #6d562d
 /*********************************/
 /***********   Footer ************/
 /*********************************/

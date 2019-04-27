@@ -4,7 +4,7 @@
             <?php while(have_posts()) {
                 the_post();
                 if ( has_post_thumbnail() ) {
-                the_post_thumbnail('medium');
+                    the_post_thumbnail('up-medium-true', array('class' => 'center shadow'));
                 } ?>
                 <h2><?php the_title(); ?></h2>
                 <?php the_content();

@@ -20,16 +20,23 @@
 // todo: Voir pour la hauteur de la barre u header          ->>> fait
 // todo: rendre le css plus dynamique La barre nav          ->>> fait
 // todo: Enjoliver l'image du front-page                    ->>> fait
-// todo: mettre du bootraps sur le menu
-// todo: rendre le front-page adaptatif
 // todo: créer la page Linux                                ->>> fait
 // todo: créer la page développeur                          ->>> fait
 // todo: créer la page index.php                            ->>> fait
 // todo: créer le single.php                                ->>> fait
 // todo: créer le page.php                                  ->>> fait
 // todo: créer le 404.php                                   ->>> fait
+// FIXME Voir pourquoi le site à une barre de               ->>> fait
+//          navigation en bas                               ->>> fait
+// todo: S'occuper de la sidebar :
+//          mettre les catégories en place
+//          ainsi que les publicités
+//          Y placer aussi la barre de recherche
 // todo: créer les archives
+// todo: mettre le menu en adaptatif avec flexbox
+//      (et peut être javascript)
 // todo: créer les catégories
+// todo: rendre le front-page adaptatif
 // todo: créer le custom post type : les événements
 // todo: créer les custom post type pour les affiliations Udemy
 // todo: créer une page de recherche
@@ -38,11 +45,9 @@
 // todo: Faire en sorte que l'on puisse cliquer sur le titre des articles dans le fichier index.php
 // Todo: Faire en sorte que l'on puisse cliquer sur "continuer la lecture" dans le fichier index.php
 // todo: diminuer la taille du logo
-// todo: Voir pourquoi le site à une barre de navigation en bas
 // todo: Améliorer la page 404
 // todo: mettre une colonne à droite qui sera le menu de la catégorie mais aussi le menu de l'article
 // todo: Faire un entête moins vide (image....)
-// todo: S'occuper de la sidebar : mettre les catégories en place ainsi que les publicités
 // todo: augmenter le front-page avec des liens vers  les médias-sociaux, vers les articles les plus récents, les
 //              évenements
 // todo: Dans le footer, faire en sorte que l'on puisse contacter le webmaster et diriger la page vers le formulaire de
@@ -54,6 +59,8 @@
 // todo: Mettre toutes les catégories dans le menu du header et pas seulement les deux que j'ai mentionné
 //              (comme dans le tutot de MVC).
 // todo: Faire en sorte que le s articles des archives et de l'index apparaissent un à un
+// todo: petit décalage sur les pages de catégories entre les articles (autour des pointillés de couleurs)
+// todo: Supprimer les catégories Linux et Développeur de la barre de navigation du haut
 
 ?>
 <!DOCTYPE html>
