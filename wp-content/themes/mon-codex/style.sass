@@ -25,15 +25,22 @@ $i : 1
   padding: 50px
   h2
     display: block
-    margin-top: 50px
     padding-left: 10px
-    margin-bottom: 30px
+    margin-bottom: 25px
+    margin-top: 40px
 
 // bordure de forme spéciale comme par exemple la c&tégorie de la sidebar
 @mixin bordForme1($couleurCat)
   border-radius: 5px 20px 5px
   background: $couleurCat
 
+.center
+  display: block
+  margin: 0 auto
+
+.couleurLien
+  a
+    color: #adbf54
 *
   margin: 0
   padding: 0
@@ -56,9 +63,7 @@ body
     color: $couleurTitre
   p
     margin-bottom: 20px
-.center
-  display: block
-  margin: 0 auto
+
 /*********************************/
 /*******     Images   ************/
 /*********************************/
@@ -170,13 +175,17 @@ header nav
     background-color: $grisClair
     h2
       text-align: center
+      margin-top: 10px
     p
       font-size: nth($fontSize, 4)
 
 .articles-linux
-    @include couleurPost($bleuVert, $grisMteinte)
+  margin-top: 50px
+  @include couleurPost($bleuVert, $grisMteinte)
+
 .articles-devweb
-    @include couleurPost($grisFonce, $bleuVert)
+  @include couleurPost($grisFonce, $bleuVert)
+  margin-top: 50px
 /*********************************/
 /***********   sidebar ***********/
 /*********************************/

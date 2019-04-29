@@ -1,3 +1,10 @@
+.center {
+  display: block;
+  margin: 0 auto; }
+
+.couleurLien a {
+  color: #adbf54; }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +27,6 @@ body {
     color: #adbf54; }
   body p {
     margin-bottom: 20px; }
-
-.center {
-  display: block;
-  margin: 0 auto; }
 
 /******************************** */
 /*******     Images   *********** */
@@ -107,9 +110,9 @@ header nav {
   padding: 50px; }
   #section-principale h2 {
     display: block;
-    margin-top: 50px;
     padding-left: 10px;
-    margin-bottom: 30px; }
+    margin-bottom: 25px;
+    margin-top: 40px; }
 
 .data-articles p, .data-articles a {
   font-size: 12px;
@@ -154,27 +157,30 @@ header nav {
   padding: 20px 40px;
   background-color: #46565c; }
   #section-principale .description h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
   #section-principale .description p {
     font-size: 15px; }
 
 .articles-linux {
+  margin-top: 50px;
   background-color: #4c5b65;
   padding: 50px; }
   .articles-linux h2 {
     display: block;
-    margin-top: 50px;
     padding-left: 10px;
-    margin-bottom: 30px; }
+    margin-bottom: 25px;
+    margin-top: 40px; }
 
 .articles-devweb {
   background-color: #3b6f84;
-  padding: 50px; }
+  padding: 50px;
+  margin-top: 50px; }
   .articles-devweb h2 {
     display: block;
-    margin-top: 50px;
     padding-left: 10px;
-    margin-bottom: 30px; }
+    margin-bottom: 25px;
+    margin-top: 40px; }
 
 /******************************** */
 /***********   sidebar ********** */
