@@ -17,7 +17,7 @@
                 'feed_image'            => '',
                 'exclude'               => '',
                 'hierarchical'          => true,
-                'title_li'              =>'<h3>' .__( "D'autres article sur :" ) . '</h3>'
+                'title_li'              =>'<h3>' .__( "D'autres articles" ) . '</h3>'
 
                 )); ?>
         </ul>

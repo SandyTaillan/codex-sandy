@@ -10,6 +10,7 @@ $noirBord : #191e23
 $vert : #536562
 $vertSale : #383C3D
 $couleurCat : $bleuVert, $vert
+$couleurTitre : #adbf54
 $imageTheme : "img/header-terre.png", "img/test3.png", "img/test4.png", "img/test5.png"
 $pointille : #bb4646, orange, #cfcf2a, #75bc3c, #3698e0, #7f3f7a
 // font h1 h2 texte, texte description catégorie
@@ -25,10 +26,13 @@ $i : 1
   h2
     display: block
     margin-top: 50px
-    margin-left: 50px
     padding-left: 10px
     margin-bottom: 30px
-    border-left: 8px solid $couleurTitre
+
+// bordure de forme spéciale comme par exemple la c&tégorie de la sidebar
+@mixin bordForme1($couleurCat)
+  border-radius: 5px 20px 5px
+  background: $couleurCat
 
 *
   margin: 0
@@ -46,6 +50,10 @@ body
   margin: 0 auto
   h2
     font-size: nth($fontSize, 2)
+    color: $couleurTitre
+  h3
+    font-size: 1em
+    color: $couleurTitre
   p
     margin-bottom: 20px
 .center
@@ -111,6 +119,7 @@ header nav
   margin-top: 50px
   padding: 25px
   background-color: $grisMteinte
+  @include bordForme1($couleurCat)
 
 /*********************************/
 /*******   index.php ************/
@@ -190,33 +199,25 @@ header nav
 #categorie
   background-color: $grisClair
   padding: 20px
+  @include bordForme1($couleurCat)
   h3
-    margin-bottom: 20px
+    margin-bottom: 10px
+
 li.categories
-  font-size: medium
+  font-size: 1.1em
   list-style: none
+
   padding-left: 20px
   .cat-item
     list-style-type: square
     color: nth($pointille, 4)
-    margin-bottom: 20px
+    padding-top: 20px
     ul
       li
         list-style-type: square
         color: nth($pointille, 2)
         margin-left: 20px
 
-
-
-//li
-//  .current-cat
-//    color: red
-//li.categories
-//    .current-cat-parent
-//      color: yellow
-//li
-//  .children
-//    color: #6d562d
 /*********************************/
 /***********   Footer ************/
 /*********************************/
