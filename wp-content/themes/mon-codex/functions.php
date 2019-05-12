@@ -1,10 +1,13 @@
 <?php
-
-function codex_files(){
-
+function codex_styles_files(){
     wp_enqueue_style('codex_main_style', get_stylesheet_uri());
 }
-add_action("wp_enqueue_scripts", 'codex_files');
+add_action("wp_enqueue_scripts", 'codex_styles_files');
+
+function codex_javascript_files(){
+    wp_enqueue_script('codex_main_js', get_template_directory_uri().('/js/script.js'), array());
+}
+add_action("wp_footer", 'codex_javascript_files');
 
 function codex_setup(){
     //support des vignettes

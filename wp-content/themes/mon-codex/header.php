@@ -29,9 +29,11 @@
 // FIXME Voir pourquoi le site à une barre de               ->>> fait
 //          navigation en bas                               ->>> fait
 // todo: S'occuper de la sidebar :
-//          mettre les catégories en place
+//          mettre les catégories en place                  ->>> fait
 //          ainsi que les publicités
 //          Y placer aussi la barre de recherche
+// todo: appeler le site avec bloc-bote ou un synonyme
+// todo: mettre mon gitHub dans la barre des tâches
 // todo: créer les archives
 // todo: mettre le menu en adaptatif avec flexbox
 //      (et peut être javascript)
@@ -57,7 +59,7 @@
 // todo: créer un design spécifique pour la catégorie Développement web
 // todo: créer des design de post différents dans index.php selon que c'est du Linux ou du dev.
 // todo: Mettre toutes les catégories dans le menu du header et pas seulement les deux que j'ai mentionné
-//              (comme dans le tutot de MVC).
+//              (comme dans le tuto de MVC).
 // todo: Faire en sorte que le s articles des archives et de l'index apparaissent un à un
 // todo: petit décalage sur les pages de catégories entre les articles (autour des pointillés de couleurs)
 // todo: Supprimer les catégories Linux et Développeur de la barre de navigation du haut
@@ -92,6 +94,16 @@
                     <li><a href="<?php echo site_url("/devweb"); ?>">Développeur</a></li>
                     <li><a href="<?php echo site_url("/articles"); ?>">Les articles</a></li>
                     <li><a href="<?php echo site_url('/a-propos'); ?>">À propos</a></li>
+                    <li><img src="<?php echo get_theme_file_uri('/img/loupe.png') ?>" alt="loupe de la recherche"></li>
                 </ul>
             </nav>
         </header>
+        <div id="bloc-recherche" class="disparaitre">
+            <div id="recherche-haut">
+                <form action="<?php echo site_url("/searchform.php"); ?>" method="POST" id="recherche">
+                    <label for="recherche"></label>
+                    <input type="text" name="recherche" id="recherche" placeholder="Rechercher...">
+                    <input type="submit" value="Valider">
+                </form>
+            </div>
+        </div>

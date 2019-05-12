@@ -2,6 +2,12 @@
   display: block;
   margin: 0 auto; }
 
+.apparaitre {
+  display: block; }
+
+.disparaitre {
+  display: none; }
+
 .couleurLien a {
   color: #adbf54; }
 
@@ -71,6 +77,30 @@ header nav {
         background-color: #3d8297; }
       header nav ul li:active {
         background-color: #00a0d2; }
+    header nav ul li:last-child {
+      margin-top: -7px; }
+      header nav ul li:last-child:hover {
+        height: -10px; }
+
+#bloc-recherche {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  transition: height 5s ease; }
+
+#recherche-haut {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 0 0 7px 7px;
+  background-color: #3b6f84;
+  text-align: center; }
+  #recherche-haut input[type=text] {
+    color: #292A32; }
+  #recherche-haut input[type=submit] {
+    color: #46565c; }
 
 /******************************** */
 /*******   Front-page *********** */
@@ -95,6 +125,8 @@ header nav {
 /*******   index.php *********** */
 /******************************** */
 #container {
+  position: relative;
+  z-index: -1;
   width: 65%;
   margin: 0 auto;
   display: flex; }
@@ -102,11 +134,13 @@ header nav {
 #section-principale {
   width: 80%;
   min-width: 600px;
+  min-height: 470px;
   background-color: #59606E;
   border-left: 4px solid #3b6f84;
   border-right: 4px solid #3b6f84;
   padding: 30px;
   background-color: #59606E;
+  border-radius: 10px;
   padding: 50px; }
   #section-principale h2 {
     display: block;
@@ -155,7 +189,8 @@ header nav {
 #section-principale .description {
   margin-bottom: 50px;
   padding: 20px 40px;
-  background-color: #46565c; }
+  background-color: #46565c;
+  border-radius: 10px; }
   #section-principale .description h2 {
     text-align: center;
     margin-top: 10px; }
@@ -165,6 +200,7 @@ header nav {
 .articles-linux {
   margin-top: 50px;
   background-color: #4c5b65;
+  border-radius: 10px;
   padding: 50px; }
   .articles-linux h2 {
     display: block;
@@ -174,6 +210,7 @@ header nav {
 
 .articles-devweb {
   background-color: #3b6f84;
+  border-radius: 10px;
   padding: 50px;
   margin-top: 50px; }
   .articles-devweb h2 {
@@ -225,6 +262,9 @@ li.categories {
       color: orange;
       margin-left: 20px; }
 
+/******************************** */
+/***********   404   ************ */
+/******************************** */
 /******************************** */
 /***********   Footer *********** */
 /******************************** */

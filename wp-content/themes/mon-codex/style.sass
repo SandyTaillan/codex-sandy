@@ -22,6 +22,7 @@ $i : 1
 // Les articles :  variations de couleurs selon la catégories
 @mixin couleurPost($couleurTitre, $couleurFondPost)
   background-color: $couleurFondPost
+  border-radius: 10px
   padding: 50px
   h2
     display: block
@@ -38,6 +39,11 @@ $i : 1
   display: block
   margin: 0 auto
 
+.apparaitre
+  display: block
+.disparaitre
+  display: none
+
 .couleurLien
   a
     color: #adbf54
@@ -51,6 +57,7 @@ $i : 1
 
 a
   text-decoration: none
+
 
 body
   background: $grisClair url(nth($imageTheme, 3))
@@ -107,6 +114,32 @@ header nav
         background-color: #3d8297
       &:active
         background-color: #00a0d2
+    li:last-child
+      margin-top: -7px
+      &:hover
+        height: -10px
+
+#bloc-recherche
+  position: absolute
+  z-index: 1
+  width: 100%
+  height: 50px
+  margin: 0 auto
+  transition: height 5s ease
+
+
+#recherche-haut
+  width: 500px
+  margin: 0 auto
+  padding: 10px
+  border-radius: 0 0 7px 7px
+  background-color: $bleuVert
+  text-align: center
+  input[type=text]
+    color: $ombre
+  input[type=submit]
+    color: $grisClair
+
 
 /*********************************/
 /*******   Front-page ************/
@@ -130,6 +163,8 @@ header nav
 /*******   index.php ************/
 /*********************************/
 #container
+  position: relative
+  z-index: -1
   width: 65%
   margin: 0 auto
   display: flex
@@ -137,6 +172,7 @@ header nav
 #section-principale
   width: 80%
   min-width: 600px
+  min-height: 470px
   background-color: $gris
   border-left: 4px solid $bleuVert
   border-right: 4px solid $bleuVert
@@ -173,6 +209,7 @@ header nav
     margin-bottom: 50px
     padding: 20px 40px
     background-color: $grisClair
+    border-radius: 10px
     h2
       text-align: center
       margin-top: 10px
@@ -180,6 +217,7 @@ header nav
       font-size: nth($fontSize, 4)
 
 .articles-linux
+
   margin-top: 50px
   @include couleurPost($bleuVert, $grisMteinte)
 
@@ -226,6 +264,12 @@ li.categories
         list-style-type: square
         color: nth($pointille, 2)
         margin-left: 20px
+
+/*********************************/
+/***********   404   *************/
+/*********************************/
+
+
 
 /*********************************/
 /***********   Footer ************/

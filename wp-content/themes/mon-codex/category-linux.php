@@ -32,9 +32,8 @@ Template Name: category-linux
                             } else {
                                 echo wp_trim_words(get_the_content(), 25);
                             } ?>
-                            <a href="<?php echo get_permalink(); ?>">
-                                <span style="color: #cfcf2a">Cliquez pour lire la suite ....</span>
-                            </a>
+                            <span class="couleurLien">
+                                <a href="<?php echo get_permalink(); ?>">Cliquez pour lire la suite ...</a></span>
                         </div>
                         <div class="separation">
                             <span></span><span></span><span></span><span></span><span></span><span></span>
