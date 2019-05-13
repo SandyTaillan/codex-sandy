@@ -1,9 +1,31 @@
+/******************************** */
+/******    Animation CSS  ******* */
+/******************************** */
+@keyframes rech_appar {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes rech_dispa {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%); } }
+/******************************** */
+/***********  Divers   ********** */
+/******************************** */
 .center {
   display: block;
   margin: 0 auto; }
 
 .apparaitre {
-  display: block; }
+  display: block;
+  animation-name: rech_appar;
+  animation-duration: 1s; }
 
 .disparaitre {
   display: none; }
@@ -79,16 +101,17 @@ header nav {
         background-color: #00a0d2; }
     header nav ul li:last-child {
       margin-top: -7px; }
-      header nav ul li:last-child:hover {
-        height: -10px; }
+    header nav ul li:last-child:hover {
+      margin-top: 0; }
+    header nav ul li:last-child:active {
+      margin-top: 0; }
 
 #bloc-recherche {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 50px;
-  margin: 0 auto;
-  transition: height 5s ease; }
+  margin: 0 auto; }
 
 #recherche-haut {
   width: 500px;

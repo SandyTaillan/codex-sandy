@@ -1,18 +1,4 @@
-<nav id="sidebar">
-<!--    <form role="search" method="get" id="searchform" action="http://example.com/">-->
-<!--        <div><label class="screen-reader-text" for="s">Search for:</label>-->
-<!---->
-<!---->
-<!--        </div>-->
-<!--    </form>-->
-
-<!--    --><?php //get_search_form() ?>
-<!--    <div class="searform">-->
-<!--        <form action="--><?php //echo site_url("/searchform.php"); ?><!--" method="POST" id="recherche">-->
-<!--            <input type="text" name="recherche" id="recherche" placeholder="Rechercher...">-->
-<!--            <input type="submit" value="recherche">-->
-<!--        </form>-->
-<!--    </div>-->
+<div id="sidebar">
     <div id="sidebar-pub">
         <h3>Publicité</h3>
     </div>
@@ -36,5 +22,8 @@
                 )); ?>
         </ul>
     </nav>
-</nav>
+    <div class="github">
+
+    </div>
+</div>
 

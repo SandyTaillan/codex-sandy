@@ -35,12 +35,38 @@ $i : 1
   border-radius: 5px 20px 5px
   background: $couleurCat
 
+/*********************************/
+/******    Animation CSS  ********/
+/*********************************/
+
+@keyframes rech_appar
+  0%
+    opacity: 0
+    transform: translateY(-50%)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes rech_dispa
+  0%
+    opacity: 1
+    transform: translateY(0)
+  100%
+    opacity: 0
+    transform: translateY(-50%)
+/*********************************/
+/***********  Divers   ***********/
+/*********************************/
+
 .center
   display: block
   margin: 0 auto
 
 .apparaitre
   display: block
+  animation-name: rech_appar
+  animation-duration: 1s
+
 .disparaitre
   display: none
 
@@ -57,7 +83,6 @@ $i : 1
 
 a
   text-decoration: none
-
 
 body
   background: $grisClair url(nth($imageTheme, 3))
@@ -116,17 +141,16 @@ header nav
         background-color: #00a0d2
     li:last-child
       margin-top: -7px
-      &:hover
-        height: -10px
-
+    li:last-child:hover
+        margin-top: 0
+    li:last-child:active
+        margin-top: 0
 #bloc-recherche
   position: absolute
   z-index: 1
   width: 100%
   height: 50px
   margin: 0 auto
-  transition: height 5s ease
-
 
 #recherche-haut
   width: 500px

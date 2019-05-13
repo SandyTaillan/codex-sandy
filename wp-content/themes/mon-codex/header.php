@@ -31,8 +31,7 @@
 // todo: S'occuper de la sidebar :
 //          mettre les catégories en place                  ->>> fait
 //          ainsi que les publicités
-//          Y placer aussi la barre de recherche
-// todo: appeler le site avec bloc-bote ou un synonyme
+// todo: appeler le site bloc-note ou un synonyme
 // todo: mettre mon gitHub dans la barre des tâches
 // todo: créer les archives
 // todo: mettre le menu en adaptatif avec flexbox
