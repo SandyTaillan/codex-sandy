@@ -102,9 +102,11 @@ header nav {
     header nav ul li:last-child {
       margin-top: -7px; }
     header nav ul li:last-child:hover {
-      margin-top: 0; }
+      margin-top: 0;
+      padding-top: 13px; }
     header nav ul li:last-child:active {
-      margin-top: 0; }
+      margin-top: 0;
+      padding-top: 13px; }
 
 #bloc-recherche {
   position: absolute;

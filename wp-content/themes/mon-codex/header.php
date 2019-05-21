@@ -99,10 +99,6 @@
         </header>
         <div id="bloc-recherche" class="disparaitre">
             <div id="recherche-haut">
-                <form action="<?php echo site_url("/searchform.php"); ?>" method="POST" id="recherche">
-                    <label for="recherche"></label>
-                    <input type="text" name="recherche" id="recherche" placeholder="Rechercher...">
-                    <input type="submit" value="Valider">
-                </form>
+                <?php get_search_form(); ?>
             </div>
         </div>
