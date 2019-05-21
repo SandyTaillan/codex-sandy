@@ -30,7 +30,7 @@
 .disparaitre {
   display: none; }
 
-.couleurLien a {
+.couleurLien {
   color: #adbf54; }
 
 * {
@@ -51,7 +51,7 @@ body {
     font-size: 32px;
     color: #adbf54; }
   body h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #adbf54; }
   body p {
     margin-bottom: 20px; }
@@ -151,7 +151,6 @@ header nav {
 /******************************** */
 #container {
   position: relative;
-  z-index: -1;
   width: 65%;
   margin: 0 auto;
   display: flex; }
@@ -290,6 +289,21 @@ li.categories {
 /******************************** */
 /***********   404   ************ */
 /******************************** */
+/******************************** */
+/*********   recherche    ******* */
+/******************************** */
+#recherche h2, #recherche h3, #recherche .rechertext {
+  text-align: center;
+  margin-bottom: 50px; }
+#recherche img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px; }
+
+#index-recherche {
+  margin-top: 100px; }
+
 /******************************** */
 /***********   Footer *********** */
 /******************************** */

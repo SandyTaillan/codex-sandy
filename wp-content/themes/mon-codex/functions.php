@@ -14,8 +14,20 @@ function codex_setup(){
     add_theme_support( 'post-thumbnails' );
 
     //créer format image slider front
+    add_image_size('thumbnail', 150, 150, true);
     add_image_size('up-medium-true', 450, 250, true);
     add_image_size('up-medium-false', 500, 375, false);
     add_image_size('front-slider', 1140, 420, true);
 }
 add_action( 'after_setup_theme', 'codex_setup' );
+
+// filtre pour la recherche
+function my_search_filter( $query )
+{
+    if ( $query->is_search )
+    {
+        $query->set( 'post__not_in',array( 19, 27, 65, 7, 10,41, 5) );
+    }
+    return $query;
+}
+add_filter('pre_get_posts','my_search_filter');
